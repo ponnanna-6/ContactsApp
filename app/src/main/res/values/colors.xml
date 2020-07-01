@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D84315</color>
+    <color name="colorPrimaryDark">#BF360C</color>
+    <color name="colorAccent">#BF360C</color>
+
+    <!--Dark orange-->
+    <color name="dark_orange">#BF360C</color>
+
+    <!--Orange-->
+    <color name="orange">#BF360C</color>
+
+    <!--White-->
+    <color name="white">#FFFFFF</color>
+
+    <!--Black-->
+    <color name="black">#000000</color>
+</resources>

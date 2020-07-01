@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--standard margins-->
+     <dimen name="margins_size">16dp</dimen>
+
+    <!--standard value for heights and widths-->
+    <dimen name="standard_dimen">44dp</dimen>
+</resources>

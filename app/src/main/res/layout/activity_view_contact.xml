@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+   <!-- View design
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/view_design" />-->
+
+    <!--Gender wise pic in circle-->
+    <ImageView
+        android:id="@+id/gender_circle_in_view_page"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/gender_male"
+        android:background="@color/orange"
+        android:layout_centerHorizontal="true"/>
+    
+    <!--Call icon to intent-->
+    <ImageView
+        android:id="@+id/call_icon_in_view_page"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@mipmap/call_ic"/>
+
+    
+    <!--Email icon to intent-->
+    <ImageView
+        android:id="@+id/email_icon_in_view_page"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@mipmap/email_ic"/>
+    
+    <!--Contacts Details-->    
+    <LinearLayout
+        android:id="@+id/contact_details_in_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="@dimen/margins_size">
+
+        <!--NAME-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/name_ic" />
+
+            <TextView
+                android:id="@+id/name_in_view_page"
+                style="@style/viewPageContactsInfoStyle" />
+
+        </LinearLayout>
+
+        <!--PHONE NUMBER-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/phone_ic" />
+
+            <TextView
+                android:id="@+id/phone_number_in_view_page"
+                style="@style/viewPageContactsInfoStyle"/>
+
+        </LinearLayout>
+
+        <!--AGE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/age_ic" />
+
+            <TextView
+                android:id="@+id/age_in_view_page"
+                style="@style/viewPageContactsInfoStyle" />
+
+        </LinearLayout>
+
+        <!--GENDER RADIO BUTTONS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Gender:"
+                android:textColor="@color/orange"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/unknown_gender_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown" />
+
+                <RadioButton
+                    android:id="@+id/male_gender_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margins_size"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/female_gender_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margins_size"
+                    android:layout_marginRight="@dimen/margins_size"
+                    android:text="@string/female" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!--EMAIL-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/email_ic" />
+
+            <TextView
+                android:id="@+id/email_in_view_page"
+                style="@style/viewPageContactsInfoStyle" />
+
+        </LinearLayout>
+
+        <!--CITY-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:layout_marginBottom="@dimen/margins_size"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/city_ic" />
+
+            <TextView
+                android:id="@+id/city_in_view_page"
+                style="@style/viewPageContactsInfoStyle"/>
+
+        </LinearLayout>
+
+        <!--COLLEGE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_dimen"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/college_ic" />
+
+            <TextView
+                android:id="@+id/college_in_view_page"
+                style="@style/viewPageContactsInfoStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

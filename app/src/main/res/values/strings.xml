@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Contacts</string>
+
+    <!--Delete-->
+    <string name="delete">"Delete</string>
+
+    <!--Save-->
+    <string name="save">Save</string>
+
+    <!--Share-->
+    <string name="share">Share</string>
+
+    <!--Edit-->
+    <string name="edit">Edit</string>
+
+    <!--GENDER-->
+    <!--<1> male-->
+    <string name="male">Male</string>
+    <!--<2> female-->
+    <string name="female">Female</string>
+    <!--<3> unknown-->
+    <string name="unknown">Unknown</string>
+</resources>
